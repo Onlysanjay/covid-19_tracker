@@ -1,0 +1,39 @@
+https://www.ambitionbox.com/salaries/take-home-salary-calculator
+-----
+let headers = new Headers();
+headers.append('Content-Type', 'application/json');
+headers.append('authentication', `${student.token}`);
+
+let options = new RequestOptions({ headers: headers });
+return this.http
+    .put(url, JSON.stringify(student), options)
+
+-----------------------------xxxxxxxxxxxxxxxxxx--------------------------------
+
+https://blog.angulartraining.com/http-interceptors-in-angular-61dcf80b6bdd
+-------------------------------------------------------------------------------
+https://www.smashingmagazine.com/2018/11/a-complete-guide-to-routing-in-angular/
+-----------------------------------------------------------------------------
+https://www.abhishekdeshmukh.com/blog/javascript-console-log-and-other-methods?fbclid=IwAR1Rmm8D6_GUApZ6nJOsAkXc7OYdQVX_ArP1Mrh3Uf3b9CgF6IyIfrwj6Cg
+
+
+
+{
+    "approvals":[
+        {
+             "role":"a29164ae-bcb1-4b0a-a236-6a87eb6a3e39",
+        "fields":[
+            {
+                "page":0,
+                "top":260,
+                "subType":"Saivarma",
+                "height":33,
+                "left":194,
+                "width":223,
+                "type":"SIGNATURE"
+            
+            
+            }
+        ]}
+    ]
+}

@@ -1,0 +1,60 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">COVID-19 <strong>INDIA</strong> TRACKER</a>
+    </div>
+  </div>
+</nav>
+<div class="conatiner">
+  <div class="jumbotron">
+    <b class="headingColor">&nbsp;Last Updated On : {{totalData?.lastupdatedtime}}</b>
+    <ngx-charts-pie-chart [view]="view" [scheme]="colorScheme" [results]="single" [gradient]="gradient"
+      [legend]="showLegend" [legendPosition]="legendPosition" [labels]="showLabels" [doughnut]="isDoughnut"
+      (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+    </ngx-charts-pie-chart>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Confimed</th>
+          <th>Active</th>
+          <th>Recovered</th>
+          <th>Deceased</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{totalData?.confirmed}}</td>
+          <td>{{totalData?.active}}</td>
+          <td>{{totalData?.recovered}}</td>
+          <td>{{totalData?.deaths}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+    <ng-container *ngFor="let data of satesData">
+      <table class="table" *ngIf="data.state!='Total'">
+        <thead>
+          <tr>
+            <th class="col-md-5 col-sm-3 col-xs-2">State</th>
+            <th> Last Updated On</th>
+            <th>Confimed</th>
+            <th>Active</th>
+            <th>Recovered</th>
+            <th>Deaths</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{data.state}}</td>
+            <td>{{data.lastupdatedtime}}</td>
+            <td>{{data.confirmed}}</td>
+            <td>{{data.active}}</td>
+            <td>{{data.recovered}}</td>
+            <td>{{data.deaths}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </ng-container>
+</div>

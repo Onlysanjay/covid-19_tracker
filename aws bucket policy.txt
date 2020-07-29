@@ -1,0 +1,16 @@
+{
+  "Version":"2012-10-17",
+  "Statement":[
+    {
+      "Sid":"AddPerm",
+      "Effect":"Allow",
+      "Principal": "*",
+      "Action":["s3:GetObject"],
+      "Resource":["arn:aws:s3:::examplebucket/*"]
+    }
+  ]
+}
+--------------------------------
+https://medium.com/@tiboprea/accessing-url-parameters-in-angular-snapshot-vs-subscription-efc4e70f9053
+--------------/
+https://www.amazon.in/gp/product/B001O7PNS2/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=sl1&tag=hitesing-21&linkId=6f15e0f908b85c09e6d48fbdb03336e1
